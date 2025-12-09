@@ -1,0 +1,1 @@
+print(sum([sum([1 for i in range(int(line[1:])) if (50 + (-1 if line[0] == 'L' else 1)*i) % 100 == 0]) for line in [line.strip() for line in open('1_input.txt').readlines()]]))
